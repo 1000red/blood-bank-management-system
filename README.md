@@ -1,10 +1,12 @@
 # DonorManagement
 
-A simple C++ Blood Bank Management System for managing donor and recipient data.
+A C++ Blood Bank Management System developed as a **Data Structures project**, using a **Doubly Linked List** to manage donor and recipient records.
 
 ## Overview
 
-This console application allows users to:
+This console application demonstrates the use of **Object-Oriented Programming (OOP)**, **Doubly Linked Lists**, and **File Handling** in C++.
+
+The application allows users to:
 
 - Register as a donor or recipient
 - Login with email and password
@@ -12,41 +14,47 @@ This console application allows users to:
 - Delete an account
 - Request a donation (donor side)
 - Search blood types and request blood (recipient side)
-- Persist data to text output files
+- Persist data using text files
+
+## Data Structures Used
+
+- Doubly Linked List
+- Custom Node implementation
+- Dynamic Memory Allocation
+
+## Technologies
+
+- C++
+- Object-Oriented Programming (OOP)
+- File Handling
+- Doubly Linked List
 
 ## Files
 
-- `DonorManagement.cpp` - main source file for the application
-- `DonorManagement.vcxproj` - Visual Studio C++ project file
-- `Recipients.txt` - sample or output data file used by the app
+- `DonorManagement.cpp` - Main application source code
+- `DonorManagement.vcxproj` - Visual Studio project
+- `Recipients.txt` - Output data file
+- `Donors.txt` - Output data file
 
 ## Build Instructions
 
 ### Linux / macOS
 
-Use `g++`:
-
 ```bash
-cd /home/alfred/University/projects/Data/Project01/DonorManagement
-g++ DonorManagement.cpp -o DonorManagement
+g++ DonorManagement.cpp -std=c++17 -o DonorManagement
 ./DonorManagement
 ```
 
 ### Windows
 
-You can open `DonorManagement.vcxproj` in Visual Studio and build the project there.
-
-## Usage
-
-1. Run the application.
-2. Choose `1` for Donor or `2` for Recipient.
-3. Follow prompts to create an account, login, update data, delete account, or request blood/donation.
+Open `DonorManagement.vcxproj` using Visual Studio and build the project.
 
 ## Notes
 
-- The current implementation stores donors and recipients in memory and appends some output to text files.
-- Data persistence is implemented through simple file writes, not a database.
+- This project was developed for learning **Data Structures** and **Object-Oriented Programming**.
+- Donor and recipient records are stored using a custom Doubly Linked List.
+- Data is saved to text files rather than a database.
 
 ## License
 
-This project is provided as-is for educational purposes.
+This project is provided for educational purposes.
